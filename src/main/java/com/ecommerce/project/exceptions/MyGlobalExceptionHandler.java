@@ -38,5 +38,6 @@ public class MyGlobalExceptionHandler {
     public ResponseEntity<APIResponse> myAPIException(APIException e){
         APIResponse apiResponse= new APIResponse(e.getMessage(), false);
         return new ResponseEntity<>(apiResponse, HttpStatus.BAD_REQUEST);
+        // committed
     }
 }
